@@ -1,0 +1,11 @@
+
+version: 4
+
+jobs:
+  sleep10:
+    requires: [~commit]
+    image: node:20
+    steps:
+      - sleep: | 
+          echo "Sleeping for 10 seconds"
+          sleep 10
